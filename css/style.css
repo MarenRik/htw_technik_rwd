@@ -1,7 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 30px;
-
 }
 
 img {
@@ -20,9 +19,12 @@ video{
   overflow:hidden;
 }
 
-
 .row {
    padding-bottom:30px;
+}
+
+.projekt-text {
+  margin: 0px 130px;
 }
 
 /*-----------------------header-----------------------------------------------*/
