@@ -11,28 +11,35 @@
 <body>
 
   <!--..........................Header...........................-->
-  <header>
-        <div class="container">
-          <div id="branding">
-            <h1>maren rickert</h1>
-          </div>
-            <nav>
-              <ul>
-                  <div class="dropdown">
-                    <li class="current dropbtn"><a href="index.html">Work</a></li>
-                      <div class="dropdown-content">
-                        <a href="drawings.html">Drawings</a>
-                        <a href="print.html">Print</a>
-                        <a href="photography.html">Photography</a>
-                        <a href="video.html">Video</a>
-                      </div>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </div>
-              </ul>
-            </nav>
-          </div>
-    </header>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Maren Rickert</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Work<span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="print.html">Print</a>
+              <a class="dropdown-item" href="illustration.html">Illustration</a>
+              <a class="dropdown-item" href="photography.html">Photography</a>
+              <a class="dropdown-item active" href="video.html">Video</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 <!--..........................Portfolio-Themen...........................-->
 
           <div class="container-fluid">

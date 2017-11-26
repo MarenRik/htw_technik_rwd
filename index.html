@@ -11,8 +11,39 @@
 <body>
 
   <!--..........................Header...........................-->
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Maren Rickert</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Work<span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="print.html">Print</a>
+              <a class="dropdown-item" href="illustration.html">Illustration</a>
+              <a class="dropdown-item" href="photography.html">Photography</a>
+              <a class="dropdown-item" href="video.html">Video</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<!--
   <header>
-        <div class="container">
+        <div class="container-fluid">
           <div id="branding">
             <h1>maren rickert</h1>
           </div>
@@ -21,7 +52,7 @@
                   <div class="dropdown">
                     <li class="current dropbtn"><a href="index.html">Work</a></li>
                       <div class="dropdown-content">
-                        <a href="drawings.html">Drawings</a>
+                        <a href="illustration.html">Illustration</a>
                         <a href="print.html">Print</a>
                         <a href="photography.html">Photography</a>
                         <a href="video.html">Video</a>
@@ -31,44 +62,9 @@
                   </div>
               </ul>
             </nav>
-          </div>
-    </header>
-
-  <!--
-    </header>
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-
-
-<header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6">
-            <div id="branding">
-              <h1>maren rickert</h1>
-            </div>
-          </div>
-          <nav>
-            <ul>
-              <div class="col-2">
-                <li class="current"><a href="index.html">Work</a></li>
-              </div>
-              <div class="col-2">
-                <li><a href="about.html">About</a></li>
-              </div>
-              <div class="col-2">
-                <li><a href="contact.html">Contact</a></li>
-              </div>
-            </ul>
-          </nav>
         </div>
-      </div>
   </header>
+
 -->
 
 <!--..........................Portfolio-Themen...........................-->
@@ -76,21 +72,45 @@
       <div class="container-fluid">
             <div class="row">
               <div class="col-6">
-                <img src="img/reine_kopfsache.jpg" alt="">
+                <div class="img-left">
+                  <div class="work">
+                  <a href="print.html">
+                  Print</a>
+                  <img src="img/reine_kopfsache.jpg" alt="">
+                  </div>
+                </div>
               </div>
 
               <div class="col-6">
-                <img src="img/reine_kopfsache.jpg" alt="">
+                <div class="img-right">
+                  <div class="work">
+                  <a href="illustration.html">
+                  Illustration</a>
+                  <img src="img/reine_kopfsache.jpg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-6">
-                <img src="img/reine_kopfsache.jpg" alt="">
+                <div class="img-left">
+                  <div class="work">
+                  <a href="photography.html">
+                  Photography</a>
+                  <img src="img/reine_kopfsache.jpg" alt="">
+                  </div>
+                </div>
               </div>
 
               <div class="col-6">
-                <img src="img/reine_kopfsache.jpg" alt="">
+                <div class="img-right">
+                  <div class="work">
+                  <a href="video.html">
+                  Video</a>
+                  <img src="img/reine_kopfsache.jpg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
        </div>
