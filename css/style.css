@@ -135,7 +135,7 @@ video{
   padding-left:0px
 }
 
-/*-----------------------overlay-----------------------------------------------*/
+/*-----------------------index - overlay-----------------------------------------------*/
 .work {
   position: relative;
 }
@@ -168,7 +168,7 @@ video{
 .img-right {
   padding-left: 5px;
 }
-/*-----------------------projekt-übersicht---------------------------------*/
+/*-----------------------projekt - übersicht---------------------------------*/
 .projekt-zusammenfassung p{
   font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -207,16 +207,6 @@ video{
   margin-bottom: 50px;
 }
 /*-----------------------projekt-----------------------------------------*/
-
-.projekt-text p{
-  font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
-  text-align: justify;
-  font-size: 14px;
-  padding-left: 140px;
-  padding-right: 140px;
-  color: #5F5F5F;
-}
-
 .projekt-text h4{
   text-align: center;
   font-size: 15px;
@@ -227,7 +217,43 @@ video{
   color: #5F5F5F;
 }
 
-/*-----------------------contact-page-----------------------------------------*/
+.projekt-text p{
+  font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  font-size: 14px;
+  padding-left: 140px;
+  padding-right: 140px;
+  color: #5F5F5F;
+}
+
+/*---------------------------about-------------------------------------------*/
+
+.about-text {
+  padding-top: 23%;
+  background-color: #ececec;
+  width: 100%;
+  height:100%;
+  text-align: left;
+  color: #5F5F5F;
+}
+
+.about-text h4{
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 5px 140px 5px 140px;
+}
+
+.about-text p{
+  font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+
+/*---------------------------contact-----------------------------------------*/
 
 .contact-link a {
   width: 100%;
