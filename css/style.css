@@ -22,16 +22,46 @@ video{
 }
 
 .row {
-   padding-bottom:10px;
+   padding-bottom: 5px;
 }
 
 .projekt-text {
   margin: 40px 105px 40px 105px;
 }
 
+.img-left {
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.img-right {
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.img-middle {
+  outline: 8px solid #ffffff;
+  outline-offset: -2px;
+}
+
+.img-middle-hoch {
+  outline: 8px solid #ffffff;
+  outline-offset: -2.5px;
+  border: 2.5px;
+  border-color: #ffffff;
+  bordeR-style: inset;
+}
+
+
+.img-right-about {
+  padding-left: 5px;
+}
+
 /*-------------------------nav-bar-----------------------------------------*/
 .navbar {
-  padding: 40px 90px 10px 90px;
+  padding: 55px 90px 18px 90px;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -40,6 +70,9 @@ video{
   font-weight: bold;
   letter-spacing: 11px;
   color: #5F5F5F !important;
+}
+.navbar-brand:hover {
+  color: #cccccc !important;
 }
 
 .navbar-nav {
@@ -60,6 +93,7 @@ video{
 .dropdown-menu {
   border: none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  min-width: 0rem;
 }
 
 .dropdown-menu a {
@@ -79,57 +113,12 @@ video{
   background-color: white !important;
 }
 
-
-/*---------------------header-dropdown - ALT---------------------------------*/
-/*
-/* Style The Dropdown Button */
-.dropbtn {
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    background: white;
-    position: absolute;
-    text-align: center;
-    min-width: 60px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #5F5F5F;
-    padding: 8px 10px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    color: #3e8e41;
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 
 /*-----------------------body-----------------------------------------------*/
-
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
   padding-right: 0px;
   padding-left:0px
@@ -161,20 +150,13 @@ video{
   opacity: 1;
 }
 
-.img-left {
-  padding-right: 5px;
-}
 
-.img-right {
-  padding-left: 5px;
-}
 /*-----------------------projekt - übersicht---------------------------------*/
 .projekt-zusammenfassung p{
   font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 14px;
-  padding-left: 400px;
-  padding-right: 400px;
+  margin: 0px 170px 10px 170px;
   color: #5F5F5F;
 }
 
@@ -184,28 +166,34 @@ video{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding: 5px 200px 0px 200px;
+  padding: 0px 20px 0px 20px;
   color: #5F5F5F;
+  margin-bottom: 0px;
 }
 
 .projekt-zusammenfassung a {
   position: relative;
   display: block;
   text-align: center;
+  text-decoration: none;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.projekt-zusammenfassung a:hover {
+  color: #cccccc;
+  font-weight: bold;
 }
 
 .button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #5F5F5F;
-  padding: 4px 10px 4px 10px;
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
+  padding: 1px 10px 1px 10px;
   font-size: 12px;
-  margin-bottom: 50px;
+  width: 120px;
+  display: block;
+  margin: 3px auto 55px auto;
 }
+
 /*-----------------------projekt-----------------------------------------*/
 .projekt-text h4{
   text-align: center;
@@ -213,32 +201,48 @@ video{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding: 5px 140px 5px 140px;
+  padding: 5px 20px 5px 20px;
   color: #5F5F5F;
+}
+
+.projekt-text-subheading h4{
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 5px 20px 5px 5px;
+  color: #cccccc;
 }
 
 .projekt-text p{
   font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
   text-align: justify;
   font-size: 14px;
-  padding-left: 140px;
-  padding-right: 140px;
   color: #5F5F5F;
+}
+
+.projekt-text-team p{
+  font-family: "BrandonGrotesque", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  font-size: 14px;
+  color: #cccccc;
 }
 
 /*---------------------------about-------------------------------------------*/
-
 .about-text {
-  padding-top: 23%;
-  background-color: #ececec;
+  position: absolute;
+  padding-top: 25%;
+  background-color: #F6F6F6;
   width: 100%;
-  height:100%;
+  height: 100%;
   text-align: left;
   color: #5F5F5F;
+  padding-bottom: 25px;
 }
 
 .about-text h4{
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -252,21 +256,26 @@ video{
   padding-right: 140px;
 }
 
-
 /*---------------------------contact-----------------------------------------*/
+.contact img{
+  margin: 75px 0 25px 0;
 
-.contact-link a {
-  width: 100%;
-  height: 20%;
+}
+
+.contact a{
+  color: #5F5F5F;
   text-align: center;
   display: block;
-  background-color: #cccccc;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 15px;
-  padding-top: 33%;
+  letter-spacing: 3px;
+  font-size: 13px;
   font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.contact a:hover{
+  color: #cccccc;
 }
 
 /*-----------------------footer-----------------------------------------------*/
@@ -279,14 +288,293 @@ footer{
   text-align: center;
 }
 
-/*----------------RESPONSIVENESS--------------*/
-/* Rules for Mobile Devices */
+
+
+
+/*-----------------------------RESPONSIVENESS----------------------------*/
 @media (max-width: 576px){
-  body {
-    padding-top: 25px
+/*--------------------------general------------------------------------*/
+  .row {
+    padding-bottom:5px;
   }
 
-  h1 {
-    font-size: 18px;
+  .small .img-left {
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 5px;
   }
+
+  .small .img-right {
+    padding-left: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .small .img-left-about{
+    padding-left: 0px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+
+  .small .img-right-about{
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+
+  .dreier-small .img-right {
+    padding-left: 2px;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  .mobile .img-middle {
+    outline: none;
+  }
+
+  .mobile .img-middle-hoch {
+    outline: none;
+    border: none;
+  }
+
+/*--------------------------navigation------------------------------------*/
+  .navbar {
+    padding: 10px 5px 5px 5px;
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+    letter-spacing: 7px;
+  }
+
+/*--------------------------index-overlay------------------------------------*/
+  .work a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    font-size: 9px;
+  }
+
+  .work a:hover {
+    opacity: 0;
+  }
+
+/*-----------------------projekt - übersicht---------------------------------*/
+  .projekt-zusammenfassung p{
+    margin: 0px 20px 10px 20px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .projekt-zusammenfassung h4{
+    margin-bottom: 2.5px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 5px 20px 0px 20px;
+  }
+
+  .button {
+    font-size: 7px;
+    margin: 0px auto 20px auto;
+    width: 60px;
+    padding: 2px 5px 2px 5px;
+  }
+
+/*----------------------------------projekt---------------------------------*/
+  .projekt-text {
+    margin: 10px 25px 10px 25px;
+  }
+
+  .projekt-text h4{
+    font-size: 13px;
+  }
+
+  .projekt-text-subheading h4{
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .projekt-text p{
+    font-size: 12px;
+  }
+
+  /*-----------------------about-----------------------------------------------*/
+  .about-text {
+    position: relative;
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  .about-text h4{
+    font-size: 14px;
+    letter-spacing: 5px;
+    padding: 5px 60px 2px 60px;
+  }
+
+  .about-text p{
+    font-size: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+  }
+
+  /*-----------------------contact-----------------------------------------------*/
+  .contact a{
+    font-size: 10px;
+  }
+
+  /*-----------------------footer-----------------------------------------------*/
+  footer{
+    font-size: 7px;
+    padding: 0px;
+  }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 800px){
+  /*-----------------------about-----------------------------------------------*/
+  .about-text {
+    padding-top: 20%;
+  }
+
+  .about-text h4{
+    font-size: 9px;
+    letter-spacing: 3px;
+    padding: 5px 70px 0px 70px;
+  }
+
+  .about-text p{
+    font-size: 8px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+  }
+
+  /*-----------------------contact-----------------------------------------------*/
+  .contact a{
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+
+@media (min-width: 800px) and (max-width: 1024px){
+
+  /*--------------------------navigation------------------------------------*/
+    .navbar-brand {
+      font-size: 15px;
+      letter-spacing: 7px;
+    }
+
+  /*-----------------------about-----------------------------------------------*/
+  .about-text {
+    padding-top: 20%;
+  }
+
+  .about-text h4{
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding: 5px 70px 0px 70px;
+  }
+
+  .about-text p{
+    font-size: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 15px;
+  }
+
+  /*-----------------------contact-----------------------------------------------*/
+  .contact a{
+    font-size: 11px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px){
+  /*-----------------------about-----------------------------------------------*/
+  .about-text {
+    padding-top: 23%;
+  }
+  .about-text h4{
+    font-size: 13px;
+    letter-spacing: 4px;
+    padding: 5px 90px 2px 90px;
+  }
+
+  .about-text p{
+    font-size: 13px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 15px;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 1300px){
+/*--------------------------navigation------------------------------------*/
+  .navbar {
+    padding: 50px 28px 17px 28px;
+  }
+
+/*--------------------------index-overlay------------------------------------*/
+  .work a {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+
+  .work a:hover {
+    opacity: 0;
+  }
+
+/*-----------------------projekt - übersicht---------------------------------*/
+  .projekt-zusammenfassung p{
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0px 85px 10px 85px;
+
+  }
+
+  .projekt-zusammenfassung h4{
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 8px;
+    margin: 3px auto 20px auto;
+    width: 80px;
+    padding: 2px 7px 2px 7px;
+  }
+
+/*----------------------------------projekt---------------------------------*/
+  .projekt-text {
+    margin: 25px 60px 30px 60px;
+  }
+
+  .projekt-text h4{
+    font-size: 13px;
+    padding-bottom: 0px;
+  }
+
+  .projekt-text-subheading h4{
+    font-size: 11px;
+  }
+
+  .projekt-text p{
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+/*-----------------------footer-----------------------------------------------*/
+  footer{
+    font-size: 9px;
+    padding: 0px;
+  }
+
 }

@@ -1,0 +1,8 @@
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
